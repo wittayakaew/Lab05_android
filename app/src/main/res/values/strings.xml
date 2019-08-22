@@ -4,11 +4,15 @@
     <string name="button2_slot_text">Slot2</string>
     <string name="button3_slot_text">Slot3</string>
 
-    <string name="name_text">Name</string>
-    <string name="class_text">Class</string>
-    <string name="num_text">Number</string>
-    <string name="edit_button">EDIT</string>
-    <string name="cancel_button">CANCEL</string>
+    <string name="name_text"></string>
+    <string name="class_text"></string>
+    <string name="num_text"></string>
+    <string name="edit_button">UPDATE</string>
+    <string name="cancel_button">DELETE</string>
     <string name="name_set">Name</string>
+    <string name="setname"/>
+    <string name="setclass"/>
+    <string name="setnum"/>
+    <string name="slotshow"/>
 
 </resources>
