@@ -8,6 +8,7 @@
         <variable name="car2" type="com.example.lab05.CarList"/>
         <variable name="car3" type="com.example.lab05.CarList"/>
     </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout
 
             android:layout_width="match_parent"
