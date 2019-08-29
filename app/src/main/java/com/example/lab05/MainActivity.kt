@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
+import androidx.navigation.ui.NavigationUI
 import com.example.lab05.databinding.ActivityMainBinding
 import com.example.lab05.databinding.FragmentCarParkBinding
 import kotlinx.android.synthetic.main.activity_main.*
@@ -27,9 +29,11 @@ class MainActivity : AppCompatActivity() {
 //            }
 //        }
         binding = DataBindingUtil.setContentView(this,R.layout.activity_main)
+// สร้าง navigation bar
+val navController= this.findNavController(R.id.myNavHostFragment)
+    NavigationUI.setupActionBarWithNavController(this,navController)
 
-
-//            binding.buttonSlot1.setOnClickListener(){
+    //            binding.buttonSlot1.setOnClickListener(){
 //                slot = 1
 //                showview(it)
 //
@@ -64,6 +68,11 @@ class MainActivity : AppCompatActivity() {
 
 
 
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        val navController = findNavController(R.id.myNavHostFragment)
+        return navController.navigateUp()
     }
 //    private fun showview(view: View){
 //        binding.apply {
