@@ -17,5 +17,11 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="user_edit"/>
+    <string name="userName_hint">UserName</string>
+    <string name="password_hint">Password</string>
+    <string name="login_page">LOGIN</string>
+    <string name="clear_button">CLEAR</string>
+    <string name="login_button">LOGIN</string>
 
 </resources>
