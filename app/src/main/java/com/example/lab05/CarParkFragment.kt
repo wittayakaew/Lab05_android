@@ -21,7 +21,7 @@ private const val ARG_PARAM2 = "param2"
  *
  */
 class CarParkFragment : Fragment() {
-
+    private lateinit var binding: FragmentCarParkBinding
     var car1: CarList = CarList("", "", "")
     var car2: CarList = CarList("", "", "")
     var car3: CarList = CarList("", "", "")
@@ -32,7 +32,7 @@ class CarParkFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val binding = DataBindingUtil.inflate<FragmentCarParkBinding>(inflater, R.layout.fragment_car_park,
+        binding = DataBindingUtil.inflate<FragmentCarParkBinding>(inflater, R.layout.fragment_car_park,
             container, false)
 
         binding.buttonSlot1.setOnClickListener(){
