@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
 import com.example.lab05.databinding.FragmentLoginBinding
 
 
@@ -26,6 +27,25 @@ class LoginFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = DataBindingUtil.inflate(inflater,R.layout.fragment_login,container,false)
+        binding.apply {
+            button.setOnClickListener{ view ->
+                if(usernaemEdit.text.toString().equals("admin")){
+                    if (passwordEdit.text.toString().equals("1234")){
+                        view.findNavController().navigate(R.id.action_loginFragment_to_carParkFragment)
+                    }else{
+
+                    }
+                }
+
+
+            }
+            button2.setOnClickListener{
+                view ->
+                usernaemEdit.setText("")
+                passwordEdit.setText("")
+            }
+        }
+
         return binding.root
     }
 

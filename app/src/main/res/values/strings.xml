@@ -23,5 +23,6 @@
     <string name="login_page">LOGIN</string>
     <string name="clear_button">CLEAR</string>
     <string name="login_button">LOGIN</string>
+    <string name="error_massage"/>
 
 </resources>
