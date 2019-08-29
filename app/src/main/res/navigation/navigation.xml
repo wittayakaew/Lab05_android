@@ -11,4 +11,6 @@
     </fragment>
     <fragment android:id="@+id/carParkFragment" android:name="com.example.lab05.CarParkFragment"
               android:label="fragment_car_park" tools:layout="@layout/fragment_car_park"/>
+    <fragment android:id="@+id/infoFragment" android:name="com.example.lab05.InfoFragment"
+              android:label="InfoFragment"/>
 </navigation>

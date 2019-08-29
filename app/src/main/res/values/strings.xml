@@ -24,5 +24,7 @@
     <string name="clear_button">CLEAR</string>
     <string name="login_button">LOGIN</string>
     <string name="error_massage"/>
+    <string name="info_text">Infi Page</string>
+    <string name="about_info">About Me</string>
 
 </resources>
